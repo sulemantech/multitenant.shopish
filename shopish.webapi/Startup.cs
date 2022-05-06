@@ -39,10 +39,7 @@ namespace multitenant.shopish.webapi
 
             services.AddHttpContextAccessor();
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Multitenant.Api", Version = "v1" });
-            });
+           
             services.AddTransient<ITenantService, TenantService>();
             services.AddTransient<IProductService, ProductService>();
             services.Configure<TenantSetting>(Configuration.GetSection(nameof(TenantSetting)));
