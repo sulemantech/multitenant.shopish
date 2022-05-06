@@ -16,6 +16,7 @@ namespace shopish.domain.Settings
     {
         public string Name { get; set; }
         public string TID { get; set; }
+        public string Host { get; set; }
         public string ConnectionString { get; set; }
     }
 

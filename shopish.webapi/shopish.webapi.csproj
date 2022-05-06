@@ -12,4 +12,9 @@
 </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\shopish.domain\shopish.domain.csproj" />
+    <ProjectReference Include="..\shopish.infrastructure\shopish.infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
